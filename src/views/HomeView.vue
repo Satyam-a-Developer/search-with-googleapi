@@ -136,7 +136,7 @@ if (localStorage) {
 },
 
     fetchData() {
-      fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAsU1i7uJHQuGmJXAfLpOEmsu24uyon804&cx=a28ac100bde7a41c2&q=${this.inputValue}`, {
+      fetch(`https://www.googleapis.com/customsearch/v1?key=API_KEY&q=${this.inputValue}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
