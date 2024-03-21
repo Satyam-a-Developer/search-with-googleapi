@@ -1,28 +1,3 @@
-<!-- <template>
-  <div>
-    <p>Visited Link:
-      <li>
-        {{ visitedLinks[0] }}
-      </li> </p>
-  </div>
-</template>
-
-<script>
-export default {
-  data() {
-    return {
-      visitedLinks: null,
-    };
-  },
-  created() {
-    // Fetch data from localStorage on component creation
-    const storedLink = localStorage.getItem('visitedLinks');
-    if (storedLink) {
-      this.visitedLinks = JSON.parse(storedLink); // Parse if stored as JSON
-    }
-  },
-};
-</script> -->
 
 <template>
   <div v-if="visitedLinks">
